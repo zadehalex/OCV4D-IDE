@@ -1,4 +1,4 @@
-#OCV4D_IDE
+OCV4D_IDE
 =========
 
 The is Delphi demo code using opencv to analysis picture, and using script to do sample logical operating. I don't if it is right solution, but it is interesting and saving lots of coding time when develop cv application.
