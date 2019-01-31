@@ -1,0 +1,21 @@
+//2019/01/25 zadeh
+//script2:
+program script2;
+
+{$I common.inc}
+
+var i,idxRes1,idxRes2:integer;
+    str1:string;
+begin
+
+  Writeln('start...');
+
+  zero_all();                                   Writeln('reset all');
+  str1 := 'pic\board.bmp';
+  Mat1.idx := load_image(str1);                 Writeln('result: '+ inttostr(Mat1.idx) );
+  //deal_with_image(Mat1.idx,idxRes1,idxRes2);    Writeln('draw image: '+inttostr(idxRes1)+'/'+inttostr(idxRes2));
+  //split_histogram_layer(idxRes1);                Writeln('split histogram layer');
+
+   Writeln('done.');
+
+end.

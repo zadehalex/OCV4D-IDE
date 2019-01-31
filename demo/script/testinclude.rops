@@ -1,0 +1,14 @@
+{
+  This file is part of a DEFINE / INCLUDE test. Use 
+  testdefine.rops file to execute this file.
+}
+
+var Mat1:Integer;
+
+procedure TestProc;
+begin
+  Writeln('Test Proc Called');
+  {$IFDEF ERROR}
+  Error!
+  {$ENDIF}
+end;
