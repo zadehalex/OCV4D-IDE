@@ -2,6 +2,9 @@ OCV4D_IDE
 =========
 
 The is demo code using opencv to analysis picture, and using script to do sample logical operating. I don't if it is right solution, but it is interesting and saving lots of coding time when develop cv application.
+  
+![image](https://github.com/zadehalex/OCV4D-IDE/blob/master/demo_main.jpg)
+
    
 1. require:
 -----------
