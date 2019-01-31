@@ -1,0 +1,29 @@
+//2019/01/25 : zadeh
+//script1:
+program script1;
+
+{$I common.inc}
+
+var i,idxRes1,idxRes2:integer; str1:string;
+begin
+
+  testproc();
+
+  Writeln('start...');
+  
+        //for  i := 0 to 10000 -1   do //test meamory leak
+        // begin
+
+  zero_all();                                   Writeln('reset all');
+  str1 := 'pic\board.bmp';
+  Mat1.idx := load_image(str1);                 Writeln('result: '+ inttostr(Mat1.idx) );
+  deal_with_image(Mat1.idx,idxRes1,idxRes2);    Writeln('draw image: '+inttostr(idxRes1)+'/'+inttostr(idxRes2));
+  //show_mat_image(idxRes1);                    Writeln('show image: '+inttostr(idxRes1));
+  split_histogram_layer(idxRes1);               Writeln('split histogram layer');
+
+        // end;
+
+   Writeln('done.');
+ 
+end.
+
